@@ -84,7 +84,7 @@ a {
 ーーーーーーーーーーーーーーーーーーーー*/
 .sign-up-bg {
     background: rgb(141, 141, 141);
-    background-image:url(../images/top_bg.gif);
+    background-image:url(../images/);
     background-position: center top;
     min-width: 100vh;
     min-height: 150vh;
