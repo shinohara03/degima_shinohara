@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* 共通メニュー */
+
+/* Webフォント読み込み */
+@font-face {
+    font-family: 'PixelMplus10';
+    src: url('../font/PixelMplus10-Bold.ttf') format('truetype');
+  }
+
+body {
+    font-family: PixelMplus10,sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+a {
+    text-decoration: none;
+}
+
+
+/* トップページ
+ーーーーーーーーーーーーーーーーーーーー*/
+
+.top-bg {
+    background-image:url(../images/top_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.title-content {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title-content img {
+    width:80%;
+}
+.command {
+    width:80%;
+    margin: 0 auto;
+}
+.command ul {
+    background:#000;
+    border: 2px solid #fff; 
+    padding: 15px 0;
+    width: 30%;
+    margin: 0 auto;
+}
+.command ul li{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    padding: 5px 0;
+}
+.command ul li a{
+    color: #fff;
+    font-family: PixelMplus10,sans-serif;
+}
+.command ul li :hover:before{
+    content:"▶︎";
+    padding-right: 10px;
+}
+
+
+
+/* 新規登録画面 
+ーーーーーーーーーーーーーーーーーーーー*/
+.sign-up-bg {
+    background: rgb(141, 141, 141);
+    background-image:url(../images/top_bg.gif);
+    background-position: center top;
+    min-width: 100vh;
+    min-height: 150vh;
+    }
+.sign-up-bg {
+    position:relative;
+    }
+    
+.sign-up-container {
+    background: #000;
+    border: 8px solid #FFF;
+    border-radius: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 4%;
+    padding-bottom: 2%;
+}
+.sign-up-container {
+    position: relative;
+    top: 70px;
+}
+.sign-up-title {
+    text-align: center;
+    font-size: 1.375rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    border-bottom: 5px solid #FFF;
+    letter-spacing: 5px;
+}
+
+/* フォーム画面 共通
+ーーーーーーーーーーーーーーーーーーーー*/
+.form-group label{
+    font-size: 0.18rem;
+}
+.form-group.row {
+    margin: 5px;
+}
+.name_wrapper {
+    flex: 1;
+    background: rgb(0, 0, 0);  
+}
+.gender_wrapper {
+    background: rgb(0, 0, 0);
+}
+.name_gender_flex {
+    display: flex;
+}
+
+input.w-100 {
+    width:100%;
+    padding: 2px 0;
+}
+select.w-100 {
+    width:100%;
+    padding: 2px 0;
+}
+
+/* 項目　フレーム枠 
+ーーーーーーーーーーーーーーーーーーーー*/
+fieldset {
+    border: 2px #FFF solid;
+    margin: 0 auto;
+    padding: 5px;
+}
+legend {
+    padding: 0 5px;
+    color: #fff;
+    margin: 0 5px;
+}   
+
+/* キャラクターセレクト 
+ーーーーーーーーーーーーーーーーーーーー*/
+.character-select_content {
+    width: 100%;
+}
+.character-select_content {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+  
+.character-select_content img {
+    width: 70px;
+    margin:5px;
+    /* padding:5px; */
+}
+/*ラジオボタンを見えないようにするCSS*/
+input[type=radio] {
+    display: none;
+}
+
+
+/* 登録ボタン 
+ーーーーーーーーーーーーーーーーーーーー*/
+.sign-up-set{
+    text-align: center;
+    margin-top: 30px;
+}
+.set-btn {
+    font-size: 1.375rem;
+    letter-spacing: 5px;
+    padding: 15px 10px;
+    background: rgb(66, 66, 66);
+    color: #fff;
+    border-radius: 5px;
+    font-family: PixelMplus10,sans-serif;
+}
+
+
+/* スマホ 画面
+ーーーーーーーーーーーーーーーーーーーー*/
+@media screen and (max-width: 768px){ 
+
+/* トップページ
+ーーーーーーーーーーーーーーーーーーーー*/
+
+.top-bg {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.title-content {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title-content img {
+    width:80%;
+}
+.command {
+    width:80%;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+.command ul {
+    background:#000;
+    border: 2px solid #fff; 
+    padding: 2px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.command ul li{
+    list-style: none;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.command ul li a{
+    font-size: 0.15rem;
+}
+
+
+
+    /* 登録画面 */
+.container {
+    margin: 0 50px;
+}
+/* 性別横並び解除 */
+.name_gender_flex {
+    display: block;
+}
+/* 項目幅　変更 */
+input.w-100 {
+    width:100%;
+    padding: 5px 0;
+}
+select.w-100 {
+    width:100%;
+    padding: 5px 0;
+}
+/* キャラクター */
+.character-select_content img {
+    width: 100px;
+    margin: 5px;
+}
+.character-select_content {
+    display:flex;
+    flex-wrap: wrap;
+}
+}
