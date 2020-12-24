@@ -79,6 +79,53 @@ a {
 }
 
 
+/* ログイン画面
+ーーーーーーーーーーーーーーーーーーーー*/
+.login-bg {
+    background: rgb(141, 141, 141);
+    background-image:url(../images/);
+    background-position: center top;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.login-bg {
+    position:relative;
+    }
+    
+.login-container {
+    background: #000;
+    border: 8px solid #FFF;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+.login-container {
+    position: relative;
+    top: 160px;
+}
+
+.form-group.row.login{
+    margin: 20px 0;
+}
+.form-group.row.login:last-child{
+    margin-bottom: 0;
+}
+
+.login button {
+    font-size: 1rem;
+    padding: 5px 2px;
+    background: rgb(66, 66, 66);
+    color: #fff;
+    border-radius: 5px;
+    font-family: PixelMplus10,sans-serif;
+}
+
+
+
+
+
 
 /* 新規登録画面 
 ーーーーーーーーーーーーーーーーーーーー*/
@@ -234,17 +281,23 @@ input[type=radio] {
     text-align: center;
     padding: 2px 0;
 }
-
+/* 登録画面 */
 .command ul li a{
     font-size: 0.15rem;
 }
+/* ログイン画面 */
+.login-container {
+    width:80%;
+}
+.container.login-bg {
+    margin: 0 0px;
+}
 
-
-
-    /* 登録画面 */
+/* 登録画面 */
 .container {
     margin: 0 50px;
 }
+
 /* 性別横並び解除 */
 .name_gender_flex {
     display: block;
