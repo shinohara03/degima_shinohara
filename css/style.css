@@ -82,9 +82,7 @@ a {
 /* ログイン画面
 ーーーーーーーーーーーーーーーーーーーー*/
 .login-bg {
-    background: rgb(141, 141, 141);
-    background-image:url(../images/);
-    background-position: center top;
+    background-image:url(../images/bg_1.png);
     min-width: 100vh;
     min-height: 100vh;
 }
@@ -130,9 +128,7 @@ a {
 /* 新規登録画面 
 ーーーーーーーーーーーーーーーーーーーー*/
 .sign-up-bg {
-    background: rgb(141, 141, 141);
-    background-image:url(../images/);
-    background-position: center top;
+    background-image:url(../images/bg_1.png);
     min-width: 100vh;
     min-height: 150vh;
     }
