@@ -217,10 +217,40 @@ legend {
     margin:5px;
     /* padding:5px; */
 }
-/*ラジオボタンを見えないようにするCSS*/
-input[type=radio] {
+
+
+    .js-panel-select {
+    /* チェックボックスの親要素にrelativeを指定しておきます。 */
+    position: relative;
+  }
+
+  .js-panel-select .disabled_checkbox {
+    /* チェックボックスの位置は絶対位置にします。 */
+    position: absolute;
+    /* チェックボックスは、親要素の右上から12pxの位置に配置します。 */
+    top: -64px;
+    left: 6px;
+  }
+
+
+  .js-panel-select img.panel-thumbnail.checked {
+    /* チェックが入った状態だと、枠が表示されるようにします。 */
+    border: 6px solid blue;
+    /* 線をwidthとheightに含めるようにします。 */
+    box-sizing: border-box;
+  }
+
+  .js-panel-select .disabled_checkbox {
+    /* チェック前は非表示にしておきます。 */
     display: none;
-}
+  }
+
+  .js-panel-select img.panel-thumbnail.checked + .disabled_checkbox {
+    /* 画像にcheckedクラスが指定されたときは、
+    チェックボックスの非表示を解除します。 */
+    display: block;
+  }
+
 
 
 /* 登録ボタン 

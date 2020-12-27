@@ -24,33 +24,39 @@
                                 <div class="form-group row" id="container-top-characters">
                                     <fieldset class="border-flame">
                                         <legend><label for="character" class="col-md-4 col-form-label text-md-right ">{{ __('キャラクターを選ぶ') }}</label></legend>
-                                        <label for="character_A" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="0" id="character_A">
-                                            <img class="panel-img" src="images/character_A.png">
+                                        <label for="character_A" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="0" id="character_A" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_A.png">
                                         </label>
-                                        <label for="character_B" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="1" id="character_B">
-                                            <img class="panel-img" src="images/character_B.png">
+                                        <label for="character_B" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="1" id="character_B" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_B.png">
                                         </label>
-                                        <label for="character_C" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="3" id="character_C">
-                                            <img class="panel-img" src="images/character_C.png">
+                                        <label for="character_C" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="3" id="character_C" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_C.png">
                                         </label>
-                                        <label for="character_D" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="4" id="character_D">
-                                            <img class="panel-img" src="images/character_D.png">
+                                        <label for="character_D" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="4" id="character_D" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_D.png">
                                         </label>
-                                        <label for="character_E" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="5" id="character_E">
-                                            <img class="panel-img" src="images/character_E.png">
+                                        <label for="character_E" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="5" id="character_E" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_E.png">
                                         </label>
-                                        <label for="character_F" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="5" id="character_E">
-                                            <img class="panel-img" src="images/character_E.png">
+                                        <label for="character_F" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="6" id="character_F" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_F.png">
                                         </label>
-                                        <label for="character_G" class="panel panel-ceo js-panel-select">
-                                            <input type="radio" name="ceo-select" value="5" id="character_G">
-                                            <img class="panel-img" src="images/character_E.png">
+                                        <label for="character_G" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="7" id="character_G" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_G.png">
+                                        </label>
+                                        <label for="character_G" class="js-panel-select">
+                                            <input type="checkbox" name="ceo-select" value="8" id="character_H" class="disabled_checkbox">
+                                            <img class="panel-thumbnail" src="images/character_H.png">
+                                        </label>
+
                                         </label>
                                     <!-- <div class="col-md-6">
                                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -215,6 +221,7 @@
     </div>
 </div>
 @endsection
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
